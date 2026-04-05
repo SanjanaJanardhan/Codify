@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/* Tejas was here! */
+
+body {
+    margin: 0;
+    padding: 5px;
+    height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    /* border:5px solid #000000; */
+    color: whitesmoke;
+}
+
+#logo{
+    height: 90px;
+    width: 90px;
+    padding: 20px;
+    padding-right: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    
+}
+.logoAndName{
+    display: flex;
+}
+.company_name{
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 31px;
+    padding: 20px;
+    padding-left: 0;
+}
+.About{
+    padding-top: 40px;
+    padding-right: 30px;
+}
+#About-btn{
+    background-color:black;
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 20px;
+    height: 60px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.mainlanding{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+    padding: 20px;
+}
+.herotext{
+    margin: 30px;
+}
+.herotext > h1, .herotext > p{
+    color: #000000;
+    font-family: 'Source Code Pro', monospace;
+}
+.logindiv,.sign-up-div{
+    display:inline-block;
+    align-items: center;
+    padding: 10px;
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+    color: whitesmoke;
+    margin: 30px;
+    background-color: #000000;
+    border-radius:7%;
+}
+.Email{
+    display: flex;
+}
+.Password{
+    display: flex;
+}
+.EmailAndPassword{
+    display: grid;
+    justify-content: center;
+}
+.user-input-box{
+    height: 20px;
+    margin-left: 10px;
+    width: 250px;
+    background-color: whitesmoke;
+    font-family: 'Source Code Pro', monospace;
+}
+.login-button-div,.signup-button-div{
+    display: flex;
+    justify-content: center;
+}
+.login-btn,.signup-btn{
+    background-color: whitesmoke;
+    color: black;
+    font-size:medium;
+    font-family: 'Source Code Pro', monospace;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+#sign-up-link,#log-in-link{
+    color: rgb(247, 210, 2);
+    cursor: pointer;
+}
+.sign-up-div{
+    display: none;
+}
+.loginAndSignup{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+
+@media (max-width:800px) {
+    body{
+        background-color: whitesmoke;
+        overflow: visible;
+        border: none;
+    }
+    .mainlanding{
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        width: 100vw;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .logindiv{
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        height: 400px;
+        width: 450px;
+        border: 5px solid black;
+        color: whitesmoke;
+        margin: 0;
+        background-color: #000000;
+        border-radius:7%;
+    }
+    .sign-up-div{
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        height: 450px;
+        width: 450px;
+        border: 5px solid black;
+        color: whitesmoke;
+        margin: 0;
+        background-color: #000000;
+        border-radius:7%;
+
+    }
+
+}
